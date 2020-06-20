@@ -13,7 +13,7 @@ if ( fs.existsSync( path ) ) {
 } else if ( process.env.NEWS_API_KEY.length < 32 ) {
     console.error( `Error: Invalid NEWS_API_KEY, too short.` );
     return 1;
-} else if ( ! regexp.test( $process.env.NEWS_API_KEY ) ) {
+} else if ( ! regexp.test( process.env.NEWS_API_KEY ) ) {
     console.error( `Error: NEWS_API_KEY contains invalid characters.` );
     return 1;
 } else {
