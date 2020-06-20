@@ -5,6 +5,7 @@ module.exports = config => {
     return {
 	'dir': {
 	    'input': 'src',
+	    'data': '_data',
 	    'output': 'dist',
 	},
     };

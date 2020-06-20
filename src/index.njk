@@ -7,4 +7,12 @@ layout: base.njk
             <div class="vibe">You are great!</div>
             <div class="love">&#x2764;</div>
         </div>
+        <ul>
+	{% for article in news.articles %}
+            <li>
+	        <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+		<span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
+	    </li>
+	{% endfor %}
+        </ul>
         <script src="js/vibe.js"></script>
