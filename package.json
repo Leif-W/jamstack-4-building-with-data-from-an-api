@@ -5,7 +5,8 @@
   "main": "vibe.js",
   "scripts": {
     "build": "node util/checkEnv.js && eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "test": "echo OK"
   },
   "keywords": [],
   "author": "",
